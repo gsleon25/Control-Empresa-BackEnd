@@ -1,0 +1,643 @@
+{
+	"info": {
+		"_postman_id": "84b16209-8b9c-497f-a192-3238158ca894",
+		"name": "ControlEmpresa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarEmpresa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRiZDk4MWE5MzM3NjU2NjhjMjJiOWYiLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MzIzNjQ5ODAsImV4cCI6MTYzMjk2OTc4MH0.HZ3N8Lsdnzw1LqJfqxwXB13JZxuhhWdiGZh1-qChjlM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "MAX Distelsa",
+							"type": "text"
+						},
+						{
+							"key": "usuario",
+							"value": "UsuarioMAXDistelsa",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registrarEmpresa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registrarEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginEmpresa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "UsuarioElektra",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/loginEmpresa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loginEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarEmpleado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmU2NTNiZWQ2ZDk2ZTgwYjk3NTYiLCJub21icmUiOiJNQVggRGlzdGVsc2EiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTYzMjUwMzYzMCwiZXhwIjoxNjMyOTM1NjMwfQ.2C6Unrch0OWMqn-_xSQnsxISo2JhFrzFuloZcwnz6BA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Anyerit Solorzano",
+							"type": "text"
+						},
+						{
+							"key": "puesto",
+							"value": "Contador",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "Logistica",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registrarEmpleado",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registrarEmpleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarEmpresa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmRhNzU0OTA1MzkzNjBhYWU0M2YiLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MzI1MDE0MDcsImV4cCI6MTYzMjkzMzQwN30.XxcgVVzX93ByquTrjLMLShJga4PbsKV_CMHGprOPKNU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "MAX Distelsa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarEmpresa/614dfe653bed6d96e80b9756",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarEmpresa",
+						"614dfe653bed6d96e80b9756"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarEmpresa",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmRhNzU0OTA1MzkzNjBhYWU0M2YiLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MzI1MDE0MDcsImV4cCI6MTYzMjkzMzQwN30.XxcgVVzX93ByquTrjLMLShJga4PbsKV_CMHGprOPKNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/eliminarEmpresa/614f7701de266ba37c9a704c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarEmpresa",
+						"614f7701de266ba37c9a704c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerEmpresaId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmRhNzU0OTA1MzkzNjBhYWU0M2YiLCJyb2wiOiJST0xfQURNSU4iLCJpYXQiOjE2MzI1MDE0MDcsImV4cCI6MTYzMjkzMzQwN30.XxcgVVzX93ByquTrjLMLShJga4PbsKV_CMHGprOPKNU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/obtenerEmpresaId/614dfe113bed6d96e80b9753",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerEmpresaId",
+						"614dfe113bed6d96e80b9753"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerEmpresas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/obtenerEmpresas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerEmpresas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/obtenerUsuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerEmpleadosPorEmpresa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmU0OTNiZWQ2ZDk2ZTgwYjk3NTUiLCJub21icmUiOiJBZ2VuY2lhcyBXYXkiLCJyb2wiOiJST0xfRU1QUkVTQSIsImlhdCI6MTYzMjYwNDY0MywiZXhwIjoxNjMyOTUwMjQzfQ.HM4EU_8mP1uvZvw7N94cn7_kyKL8EwumAsb4oKv5Tec",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/obtenerEmpleadosPorEmpresa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerEmpleadosPorEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerEmpleadoId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/obtenerEmpleadoId/614e034b31b2ca219c24780b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerEmpleadoId",
+						"614e034b31b2ca219c24780b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarEmpleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmUxMTNiZWQ2ZDk2ZTgwYjk3NTMiLCJub21icmUiOiJFbGVrdHJhIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MzI2MTE4NzAsImV4cCI6MTYzMjk1NzQ3MH0.HRBbw4V9pkprb6Gt9F10e4Eb6WI_CK0zpiiGtY4f6_4",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Pablo Lopez",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarEmpleado/614e034b31b2ca219c24780b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarEmpleado",
+						"614e034b31b2ca219c24780b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarEmpleado",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmUxMTNiZWQ2ZDk2ZTgwYjk3NTMiLCJub21icmUiOiJFbGVrdHJhIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MzI2MTE4NzAsImV4cCI6MTYzMjk1NzQ3MH0.HRBbw4V9pkprb6Gt9F10e4Eb6WI_CK0zpiiGtY4f6_4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/eliminarEmpleado/614fb1a3257171761c05bac6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarEmpleado",
+						"614fb1a3257171761c05bac6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GenerarPdf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmUxMTNiZWQ2ZDk2ZTgwYjk3NTMiLCJub21icmUiOiJFbGVrdHJhIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MzI2MTE4NzAsImV4cCI6MTYzMjk1NzQ3MH0.HRBbw4V9pkprb6Gt9F10e4Eb6WI_CK0zpiiGtY4f6_4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Elektra",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/generarPdf",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"generarPdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarProducto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmUzNDNiZWQ2ZDk2ZTgwYjk3NTQiLCJub21icmUiOiJMYSBDdXJhY2FvIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MzI2MzgwNDIsImV4cCI6MTYzMzUwMjA0Mn0.nvDU3gi7AICZEQv8ofbOEWKiJ_PpBawJd1_ePwzwPIo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Cafeteras",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "Cafeteras normales e industriales ",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "40",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarProducto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarProducto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmUxMTNiZWQ2ZDk2ZTgwYjk3NTMiLCJub21icmUiOiJFbGVrdHJhIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MzI2Mzg3NjEsImV4cCI6MTYzMzUwMjc2MX0.A2BF9sjLRlw8sWTcSLH8DIbjz6Lq524TGcXaFsPTLE0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Telefonos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarProducto/615011d57c7b5cac7877bed8",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarProducto",
+						"615011d57c7b5cac7877bed8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarProducto",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmUxMTNiZWQ2ZDk2ZTgwYjk3NTMiLCJub21icmUiOiJFbGVrdHJhIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MzI2Mzg3NjEsImV4cCI6MTYzMzUwMjc2MX0.A2BF9sjLRlw8sWTcSLH8DIbjz6Lq524TGcXaFsPTLE0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/eliminarProducto/615016e5b207b2745809c54f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarProducto",
+						"615016e5b207b2745809c54f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/listarProductos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"listarProductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarProductosPorEmpresa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MTRkZmUxMTNiZWQ2ZDk2ZTgwYjk3NTMiLCJub21icmUiOiJFbGVrdHJhIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MzI2MzkwOTgsImV4cCI6MTYzMzUwMzA5OH0.CzLSmP3JkD8LhulBIoQ60Ktp2VKkTOs1ePUAChm7hVs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/listarProductosPorEmpresa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"listarProductosPorEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerProductoId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/obtenerProductoId/615011d57c7b5cac7877bed8",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerProductoId",
+						"615011d57c7b5cac7877bed8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
